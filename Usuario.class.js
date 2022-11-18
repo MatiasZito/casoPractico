@@ -1,5 +1,5 @@
 class Usuario {
-    constructor (monto,nombre,apellidoPaterno,apellidoMaterno,celular,email,institucion,modelos)
+    constructor (monto,nombre,apellidoPaterno,apellidoMaterno,celular,email,institucion,entidad)
     {
         this.monto=monto;
         this.nombre=nombre;

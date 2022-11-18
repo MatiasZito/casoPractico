@@ -43,8 +43,6 @@ institucion.addEventListener('change',(e) =>{
     };
 });
 
-
-
 formulario.addEventListener ("submit", (e) => {
     e.preventDefault();
     let condicion = validacionFormulario();
@@ -98,13 +96,10 @@ function enviarFormulario(){
     const apellidoMaterno = document.getElementById("apellidoMaterno").value;
     const celular = document.getElementById("celular").value;
     const email = document.getElementById("email").value;
-
     let institucion = document.getElementById("institucion").value;
     let entidad = document.getElementById("entidad").value;
-
     const miUsuario = new Usuario("","","","","","","","");
     miUsuario.registrar(monto,nombre,apellidoPaterno,apellidoMaterno,celular,email,institucion,entidad);
-
     alert("Formulario enviado con éxito");
     formulario.reset();
 };
