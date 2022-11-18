@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #66992c, #145da5);
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #2e4711;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .titulo {
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #002E70;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen .titulo {
+    width: 150px;
+}
+
+.container form .detalleDeUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+}
+
+.detalleDeUsuario .cajaInput .detalle {
+    display: block;
+    margin-bottom: 2px; 
+    font-size: 13px;
+    color: #002E70;
+    margin-top: 2px;
+}
+
+.detalleDeUsuario .cajaInput input {
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 0.5px solid #66992c;
+    padding-left: 15px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    color:#00275a;
+}
+
+
+form .boton {
+    height: 30px;
+}
+
+form .boton input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #66992c;
+}
+
+form .boton input:hover {
+    background-color: #145da5;
+}
+
+.container .detalleDeUsuario .desplegable {
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 12px;
+    border: 1px solid #66992c;
+    color:#00275a;
+}
+
+.detalleDeUsuario .desplegable option {
+    height: 100px;
+}
+
+.detalleDeUsuario .cajaInput p{
+    color: red;
+    font-size: 11px;
+}

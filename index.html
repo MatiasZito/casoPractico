@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="imagen">
+            <img class="titulo" src="img/Logo_Resuelve_tu_Deuda.png" alt="logo Resuelve tu deuda">
+        </div>
+
+        <form action="" id="formulario" class="form">
+
+            <div class="detalleDeUsuario">
+           
+                <div class="cajaInput">
+                    <div class="detalle">Seleccione institución</div>
+                </div>
+
+                <select class="desplegable" aria-label="Default select example" name="" id="institucion">
+                    <option class="opcion" selected></option>
+                </select>
+
+                <div class="cajaInput">
+                    <div class="detalle">Seleccione entidad</div>
+                </div>
+
+                <select class="desplegable" aria-label="Default select example" name=""  id="entidad">
+                    <option selected></option>
+                </select>
+
+                <div class="cajaInput formularioInput monto">
+                    <label for="name"class="detalle">Monto</label>
+                    <input type="number" name="monto" id="monto" step="50" placeholder="A partir de €4000" >
+                    <p class="mensajeDeError"></p>
+                </div>
+
+                <div class="titulo">Registro</div>
+
+                <div class="cajaInput formularioInput nombre">
+                    <label for="name"class="detalle">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" >
+                    <p class="mensajeDeError"></p>
+                </div>
+
+                <div class="cajaInput formularioInput apellidoPaterno">
+                    <label for="apellidoPaterno" class="detalle">Apellido paterno</label>
+                    <input type="text" name="apellidoPaterno" id="apellidoPaterno"  placeholder="Ingrese apellido paterno" >
+                    <p class="mensajeDeError"></p>
+                </div>
+
+                <div class="cajaInput formularioInput apellidoMaterno">
+                    <label for="apellidoMadre" class="detalle">Apellido materno</label>
+                    <input type="text" name="apellidoMaterno" id="apellidoMaterno"  placeholder="Ingrese apellido materno">
+                    <p class="mensajeDeError"></p>
+                </div>
+
+                <div class="cajaInput formularioInput celular">
+                    <label for="celular" class="detalle">Celular</label>
+                    <input type="text" name="celular" id="celular" placeholder="Ingrese celular">
+                    <p class="mensajeDeError"></p>
+                </div>
+
+                <div class="cajaInput formularioInput email">
+                    <label for="email" class="detalle">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese E-mail">
+                    <p class="mensajeDeError"></p>
+                </div>
+            </div>
+
+            <div class="boton formularioBoton ">
+                <input type="submit" value="Enviar" id="enviados">
+            </div>
+
+            <p class="mensajeCorrecto"></p>
+        </form>
+        
+
+    </div> 
+
+    <script src="script.js"></script>
+    <script src="Usuario.class.js"></script>
+</body>
+</html>
